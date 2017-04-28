@@ -1,0 +1,13 @@
+<div>
+  <ul>
+    <li *ngFor="let item of items">
+      {{item}}
+    </li>
+  </ul>
+    <p>ngFor c дополнительными параметрами</p>
+  <ul>
+      <li *ngFor="let item of items ; let e = even" [style.color]=" e ? 'red' : 'blue'">
+        {{item}}
+      </li>
+  </ul>
+</div>

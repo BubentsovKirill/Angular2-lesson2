@@ -1,0 +1,23 @@
+<div *ngIf="isVisible">
+  <h1>List 1</h1>
+  <ul>
+    <li>item 11</li>
+    <li>item 12</li>
+    <li>item 13</li>
+    <li>item 14</li>
+    <li>item 15</li>
+  </ul>
+</div>
+
+<div [style.display]="isVisible ? 'display' : 'none' ">
+    <h1>List 2</h1>
+    <ul>
+        <li>item 21</li>
+        <li>item 22</li>
+        <li>item 23</li>
+        <li>item 24</li>
+        <li>item 25</li>
+    </ul>
+</div>
+
+<button (click)="changeVisible()">Click me</button>

@@ -12,7 +12,11 @@ import{
 } from './two-way-binding/index';
 
 import{
-    NgClassComponent
+    NgClassComponent,
+    NgStylesComponent,
+    NgIfComponent,
+    NgSwtichComponent,
+    NgForComponent
 } from './build-in-derectives/index';
 
 export const routes = [
@@ -24,7 +28,10 @@ export const routes = [
     {path: 'styleBinding', component : StyleBindingComponent},
     {path: 'ngModel', component : NgModelComponent },
     {path: 'ngClass', component: NgClassComponent},
-
+    {path: 'ngStyle', component: NgStylesComponent},
+    {path: 'ngIf', component: NgIfComponent},
+    {path: 'ngSwitch', component: NgSwtichComponent},
+    {path: 'ngFor', component: NgForComponent},
 
     {path: '', redirectTo : 'interpolation', pathMatch: 'full'}
 ];
