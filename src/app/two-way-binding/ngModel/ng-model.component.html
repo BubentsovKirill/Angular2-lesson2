@@ -1,0 +1,16 @@
+<div>
+  <label for="value-x">Value X</label>
+  <input type="text" id="value-x" [(ngModel)]="isValueX">
+</div>
+
+<div>
+  <label for="value-y">Value Y</label>
+  <input type="text" id="value-y" [(ngModel)]="isValueY">
+</div>
+
+<button (click)="calculation()">Result</button>
+<button (click)="reset()">Reset</button>
+
+<div>
+    Result - {{result}}
+</div>

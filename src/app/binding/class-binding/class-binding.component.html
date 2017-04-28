@@ -1,0 +1,10 @@
+<div [class]="currentClass">
+  Hello world
+</div>
+
+<button (click)="toggleClass()">Toggle Class</button>
+
+<div [class.borderClass]="isBorderClass" [class.fontClass]="isFontClass" [class.colorClass]="isColorClass">
+  Good by my darling
+</div>
+<button (click)="showAlert()">Click me</button>

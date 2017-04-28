@@ -1,0 +1,22 @@
+<input type="checkbox" [(ngModel)]="settings.accent">
+style 1
+<input type="checkbox" [(ngModel)]="settings.error">
+style 2
+<input type="checkbox" [(ngModel)]="settings.highlighted">
+style 3
+
+<div [ngClass]="settings">Hello World #1</div>
+
+<div [class.accent]="settings.accent"
+     [class.error]="settings.error"
+     [class.highlighted]="settings.highlighted">
+    Hello World #2
+</div>
+
+<div [ngClass]="['accent','error']">
+    Hello world #3
+</div>
+
+<div [ngClass]="'accent, error'">
+    Hello World #4
+</div>
