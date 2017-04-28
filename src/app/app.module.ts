@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { BindingModule } from './binding/index';
 import { TwoWayBindingModule } from "./two-way-binding/index";
 import { BuildInDerectivesModule } from './build-in-derectives/index';
+import { TemplateModule } from './templates/index';
 import { routes } from "./app.routes";
 
 @NgModule({
@@ -21,6 +22,7 @@ import { routes } from "./app.routes";
     BindingModule,
     TwoWayBindingModule,
     BuildInDerectivesModule,
+    TemplateModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

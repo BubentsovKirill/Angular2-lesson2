@@ -19,6 +19,12 @@ import{
     NgForComponent
 } from './build-in-derectives/index';
 
+import {
+    NgIfTemplateComponent,
+    NgSwitchTemplateComponent,
+    NgForTemplateComponent
+} from './templates/index';
+
 export const routes = [
     {path: 'interpolation', component : InterpolationComponent },
     {path: 'propertyBinding', component : PropertyBindingComponent },
@@ -32,6 +38,9 @@ export const routes = [
     {path: 'ngIf', component: NgIfComponent},
     {path: 'ngSwitch', component: NgSwtichComponent},
     {path: 'ngFor', component: NgForComponent},
+    {path: 'ngIfTemplate', component: NgIfTemplateComponent},
+    {path: 'ngSwitchTemplate', component: NgSwitchTemplateComponent},
+    {path: 'ngForTemplate', component: NgForTemplateComponent},
 
     {path: '', redirectTo : 'interpolation', pathMatch: 'full'}
 ];

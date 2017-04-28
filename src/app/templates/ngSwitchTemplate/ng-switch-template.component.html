@@ -1,0 +1,8 @@
+<div [ngSwitch]="choise">
+  <template [ngSwitchCase]="'1'"><div>option 1</div></template>
+  <template [ngSwitchCase]="'2'"><div>option 2</div></template>
+  <template [ngSwitchCase]="'3'"><div>option 3</div></template>
+  <template [ngSwitchCase]="'4'">option 4</template>
+  <template ngSwitchDefault><div>option default</div></template>
+</div>
+<input type="text" [(ngModel)]="choise">
